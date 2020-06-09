@@ -23,15 +23,15 @@ pipeline {
          steps {
             pwsh(script: """
                docker-compose up -d
-               ../scripts/test_container.ps1
+               ./scripts/test_container.ps1
             """)
          }
          post {
             success {
-               echo "Great App started successfully :)"
+               echo "App started successfully :)"
             }
             failure {
-               echo "Sorry App failed to start :("
+               echo "App failed to start :("
             }
          }
       }
