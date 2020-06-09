@@ -28,10 +28,10 @@ pipeline {
          }
          post {
             success {
-               echo "App started successfully :)"
+               echo "Great App started successfully :)"
             }
             failure {
-               echo "App failed to start :("
+               echo "Sorry App failed to start :("
             }
          }
       }
