@@ -99,3 +99,5 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+set GIT_SSL_NO_VERIFY=true
